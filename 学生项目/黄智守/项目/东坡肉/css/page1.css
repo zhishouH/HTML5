@@ -1,0 +1,98 @@
+#wrap .page1 {
+	background: url(../img/p1-bg.png) no-repeat top left;
+	background-size: 100% 100%;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.page1 .p1-box {
+	width: 12.34375rem;
+	height: 17rem;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: space-between;
+}
+
+.page1 .p1-box .p1-qi {
+	width: 12.34375rem;
+	height: 4.75rem;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	align-items: baseline;
+}
+.page1 .p1-box .p1-qi img {
+	display: inline-block;
+	margin: 0 0.25rem;
+}
+.page1 .p1-box .p1-qi img:nth-child(1){
+	width: 0.71875rem;
+	height: 3.03125rem;
+	animation: p1-qi 2s linear 1s infinite;
+}
+.page1 .p1-box .p1-qi img:nth-child(2){
+	width: 1.15625rem;
+	height: 4.75rem;
+	animation: p1-qi 2s linear 0s infinite;
+}
+.page1 .p1-box .p1-qi img:nth-child(3){
+	width: 0.46875rem;
+	height: 2.0625rem;
+	animation: p1-qi 2s linear 0.5s infinite;
+}
+@keyframes p1-qi{
+	from{
+		opacity: 1;
+		transform: scale(1);
+	}
+	to{
+		opacity: 0;
+		transform: scale(0.5);
+	}
+}
+.page1 .p1-box .p1-meat {
+	width: 12.34375rem;
+	height: 8.59375rem;
+}
+.page1 .p1-box .p1-meat img {
+	width: 100%;
+	height: 100%;
+}
+.page1 .p1-box .p1-text1 {
+	width: 12.34375rem;
+	height: 1.25rem;
+	font-size: 1.25rem;
+	text-align: center;
+	line-height: 1.25rem;
+	color: #782110;
+}
+.page1 .p1-box .p1-text1 span {
+	display: inline-block;
+}
+.page1 .p1-box .p1-text1 span:nth-child(1){
+	animation: span-blink 1s linear 0s infinite ;
+}
+.page1 .p1-box .p1-text1 span:nth-child(2){
+	animation: span-blink 1s linear 0.5s infinite;
+}
+.page1 .p1-box .p1-text1 span:nth-child(3){
+	animation: span-blink 1s linear 1s infinite ;
+}
+@keyframes span-blink{
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+.page1 .p1-box .p1-text2 {
+	width: 12.34375rem;
+	height: 1rem;
+	font-size: 1rem;
+	text-align: center;
+	line-height: 1rem;
+	color: #782110;
+}

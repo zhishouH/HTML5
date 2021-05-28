@@ -1,0 +1,76 @@
+@font-face {
+	font-family:'meat';
+	src: url(../font/meat.otf);
+}
+* {
+	margin: 0rem;
+	padding: 0rem;
+}
+
+html {
+	font-family: 'meat';
+}
+html,body {
+	height: 100%;
+}
+
+#wrap {
+	position: relative;
+	width: 23.4375rem;
+	height: 100%;
+	overflow: hidden;
+}
+
+#wrap .page {
+	position: absolute;
+	width: 23.4375rem;
+	height: 100%;
+	overflow: hidden;
+	display: none;
+}
+
+.in-top {
+	animation: in-top 1s linear both;
+}
+.out-top {
+	animation: out-top 1s linear both;
+}
+.in-down {
+	animation: in-down 1s linear both;
+}
+.out-down {
+	animation: out-down 1s linear both;
+}
+
+@keyframes in-top{
+	from{
+		transform: translateY(0%);
+	}
+	to{
+		transform: translateY(-100%);
+	}
+}
+@keyframes out-top{
+	from{
+		transform: translateY(100%);
+	}
+	to{
+		transform: translateY(0%);
+	}
+}
+@keyframes in-down{
+	from{
+		transform: translateY(0%);
+	}
+	to{
+		transform: translateY(100%);
+	}
+}
+@keyframes out-down{
+	from{
+		transform: translateY(-100%);
+	}
+	to{
+		transform: translateY(0%);
+	}
+}

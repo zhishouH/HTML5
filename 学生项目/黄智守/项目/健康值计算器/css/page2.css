@@ -1,0 +1,168 @@
+#wrap .page2 {
+	
+}
+ .bj-logo {
+	width: 1.96875rem;
+	height: 1.96875rem;
+	position: fixed;
+	top: 0.625rem;
+	right: 0.625rem;
+}
+.bj-logo img {
+	width: 100%;
+	height: 100%;
+	animation: bj-rotate 1s linear  infinite alternate;
+}
+/* 背景音乐 */
+@keyframes bj-rotate{
+	from{
+		transform: rotate(-45deg);
+	}
+	to{
+		transform: rotate(45deg);
+	}
+}
+.page2 .p2-box {
+	width: 23.4375rem;
+	height: 100%;
+	display: flex;
+	flex-flow: column nowrap; 
+	justify-content: space-between;
+	align-items: center;
+}
+
+.page2 .p2-box .tuolaji-bj {
+	width: 23.4375rem;
+	height: 16.5625rem;
+	background: url(../img/p2-拖拉机背景.png) no-repeat left top;
+	background-size: 100% 100%;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: flex-end;
+	align-items: center;
+}
+.page2 .p2-box .tuolaji-bj .p2-tuolaji {
+	position: relative;
+	width: 19.125rem;
+	height: 12rem;
+	background: url(../img/p2-拖拉机.png) no-repeat left top;
+	background-size: 100% 100%;
+}
+.page2 .p2-box .tuolaji-bj .p2-tuolaji .left-lun {
+	position: absolute;
+	bottom: 0;
+	left: 4.375rem;
+	width: 5.53125rem;
+	height: 5.34375rem;
+}
+.page2 .p2-box .tuolaji-bj .p2-tuolaji .left-lun img {
+	width: 100%;
+	height: 100%;
+	animation: lun-rotate 2.5s linear infinite;
+}
+.page2 .p2-box .tuolaji-bj .p2-tuolaji .right-lun {
+	position: absolute;
+	bottom: 0;
+	right: 	2.8125rem;
+	width: 4.15625rem;
+	height: 4.0625rem;
+	}
+.page2 .p2-box .tuolaji-bj .p2-tuolaji .right-lun img {
+	width: 100%;
+	height: 100%;
+	animation: lun-rotate 2.5s linear infinite;
+}
+
+@keyframes  lun-rotate{
+	from{
+		transform: rotate(0);
+		
+	}
+	to{	
+		transform: rotate(360deg);
+		}
+	
+}
+.page2 .p2-box .p2-text {
+	position: relative;
+	width: 20.84375rem;
+	height: 15.6875rem;
+	background: url(../img/p2-text.png) no-repeat left top;
+	background-size: 100% 100%	;
+}
+.page2 .p2-box .p2-text .p2-text-wrap {
+	position: absolute;
+	top: 1.25rem;
+	left: calc(50% - 6.25rem);
+	width: 12.5rem;
+	height: 9.375rem;
+}
+.page2 .p2-box .p2-text .p2-text-wrap p {
+	font-size: 1rem;
+	text-align: center;
+	opacity: 0;
+}
+.page2 .p2-box .p2-text .p2-text-wrap p:nth-child(1) {
+	animation: p-block 1s linear 0s forwards;
+}
+.page2 .p2-box .p2-text .p2-text-wrap p:nth-child(2) {
+	animation: p-block 1s linear 1s forwards;
+}
+.page2 .p2-box .p2-text .p2-text-wrap p:nth-child(3) {
+	animation: p-block 1s linear 2s forwards;
+}
+.page2 .p2-box .p2-text .p2-text-wrap p:nth-child(4) {
+	animation: p-block 1s linear 3s forwards;
+}
+.page2 .p2-box .p2-text .p2-text-wrap p:nth-child(5) {
+	animation: p-block 1s linear 4s forwards;
+}
+.page2 .p2-box .p2-text .p2-text-wrap p:nth-child(6) {
+	animation: p-block 1s linear 5s forwards;
+}
+@keyframes p-block{
+	from{
+		opacity: 0;
+	}
+	to{
+		opacity: 1;
+	}
+}
+.page2 .p2-box .p2-food {
+	width: 23.4375rem;
+	height: 6.1875rem;
+	background: url(../img/p2-food.png) no-repeat left top;
+	background-size: 100% 100%;
+}
+.page2 .p2-box .p2-arrow {
+	width: 23.4375rem;
+	height: 1.5625rem;
+	text-align: center;
+}
+.page2 .p2-box .p2-arrow img {
+	width: 1.59375rem;
+	height: 1.5625rem;
+	opacity: 0;
+	animation: p2-arrow-block 1s linear 5.5s forwards,p2-arrow 2s linear infinite alternate;
+}
+
+@keyframes p2-arrow{
+	0%{
+		transform: translateY(0);
+	}
+	50%{
+		transform: translateY(-0.5rem);
+	}
+	100% {
+		transform: translateY(0.25rem);
+	}
+}
+@keyframes p2-arrow-block{
+	from{
+		opacity: 0;
+	}
+	to{
+		opacity: 1;
+	}
+}
+

@@ -1,0 +1,48 @@
+#wrap .page1 {
+	background-color: rgba(255,255,255,.6);
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.page1 .p1-box {
+	position: relative;
+	width: 18.75rem;
+	height: 0.9375rem;
+}
+
+.page1 .p1-box .progress-bot {
+	position: absolute;
+	width: 18.75rem;
+	height: 0.9375rem;
+	border-radius: 1rem;
+	background-color: #008080;
+}
+
+.page1 .p1-box .progress-top {
+	position: absolute;
+	width: 0rem;
+	height: 0.9375rem;
+	border-radius: 1rem;
+	background-color: tomato;
+	animation: progess 5s linear forwards;
+}
+@keyframes progess{
+	from{
+		width: 0rem;
+	}
+	to{
+		width: 18.75rem;
+	}
+}
+
+.page1 .p1-box .progress-num {
+	position: absolute;
+	left: calc(50% - 0.375rem);
+	font-size: 0.75rem;
+	font-weight: bold;
+	color: #fff;
+}
+
+

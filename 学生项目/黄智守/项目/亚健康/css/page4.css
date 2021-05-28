@@ -1,0 +1,151 @@
+#wrap .page4 .p4-box {
+	position: relative;
+	width: 23.4375rem;
+	height: 100%;
+	background: url(../img/背景.png) no-repeat top left;
+	background-size: 100% 100%;
+}
+
+/* 太阳 */
+.p4-box .p4-sun {
+	position: absolute;
+	top: -4.03125rem;
+	left: -4.15625rem;
+	width: 8.0625rem;
+	height: 8.3125rem;
+}
+.p4-box .p4-sun img {
+	width: 100%;
+	height: 100%;
+	animation: p4-sun-scale 2s linear infinite alternate;
+}
+@keyframes p4-sun-scale{
+	from{
+		transform: scale(0.8);
+	}
+	to{
+		transform: scale(1);
+	}
+}
+
+.p4-box .p4-main {
+	position: absolute;
+	top: 5%;
+	left:calc(50% - 10.296875rem);
+	width: 20.59375rem;
+	height: 90%;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: space-between;
+}
+
+/* 返回 */
+.p4-box .p4-main .p4-return {
+	width: 100%;
+	height: 1.375rem;
+}
+.p4-box .p4-main .p4-return img {
+	width: 1.375rem;
+	height: 1.375rem;
+}
+.p4-box .p4-main .p4-health-test {
+	width: 100%;
+	height: 2.875rem;
+	background: url(../img/p3-圆角边框.png) no-repeat top left;
+	background-size: 100% 100%;
+	text-align: center;
+	line-height: 2.875rem;
+	color: #fff;
+}
+.p4-box .p4-main .p4-health-test span {
+	display: inline-block;
+}
+.p4-box .p4-main .p4-health-test span:nth-child(1) {
+	animation: span-move 1.2s linear 0s infinite alternate;
+}
+.p4-box .p4-main .p4-health-test span:nth-child(2) {
+	animation: span-move 1.2s linear 0.3s infinite alternate;
+}
+.p4-box .p4-main .p4-health-test span:nth-child(3) {
+	animation: span-move 1.2s linear 0.6s infinite alternate;
+}
+.p4-box .p4-main .p4-health-test span:nth-child(4) {
+	animation: span-move 1.2s linear 1.2s infinite alternate;
+}
+.p4-box .p4-main .p4-health-test span:nth-child(5) {
+	animation: span-move 1.2s linear 1.5s infinite alternate;
+}
+
+@keyframes span-move{
+	0% {
+		transform: translateY(0rem);
+	}
+	50% {
+		transform: translateY(4px);
+	}
+	100% {
+		transform: translateY(-6px);
+	}
+}
+.p4-box .p4-main .p4-health-info { 
+	position: relative;
+	width: 100%;
+	height: 32.9375rem;
+	background: url(../img/p4-症状.png) no-repeat top left;
+	background-size: 100% 100%;
+}
+/* 症状选择 */
+.p4-box .p4-main .p4-health-info .choose {
+	box-sizing: border-box;
+	padding-top: 1.25rem;
+	position: absolute;
+	top: 4.375rem;
+	left: 0;
+	width: 100%;
+	height: 17.1875rem;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-evenly;
+}
+.p4-box .p4-main .p4-health-info .choose button {
+	width: 7.09375rem;
+	height: 1.875rem;
+	border: none;
+	color: #fff;
+	text-align: left;
+	background: url(../img/p4-圆角矩形.png) no-repeat top left;
+	background-size: 100% 100%;
+}
+.p4-box .p4-main .p4-health-info .choose button span {
+	display: inline-block;
+	float:left;
+	margin: 0 0.3125rem;
+	width: 1.1875rem;
+	height: 1.1875rem;
+	color: #2b7a50;
+	text-align: center;
+	line-height: 1.1875rem;
+	background: url(../img/p4-椭圆.png) no-repeat left top;
+	background-size: 100% 100%;
+}
+/* 提交测试 */
+.p4-box .p4-main .p4-health-info .submit-test {
+	position: absolute;
+	bottom: 4%;
+	left:calc(50% - 4.328125rem);
+	width: 8.65625rem;
+	height: 2.5rem;
+}
+.p4-box .p4-main .p4-health-info .submit-test img {
+	width: 100%;
+	height: 100%;
+	animation: submit-test-scale 2s linear infinite alternate;
+}
+@keyframes submit-test-scale{
+	from{
+		transform: scale(0.8);
+	}
+	to{
+		transform: scale(1);
+	}
+}

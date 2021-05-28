@@ -1,0 +1,46 @@
+#wrap .page6 .p6-box {
+	width: 23.4375rem;
+	height: 100%;
+	background: url(../img/p6-bj.png) no-repeat top left;
+	background-size: 100% 100%;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.page6 .p6-box .p6-return {
+	width: 100%;
+	height: 1.375rem;
+}
+.page6 .p6-box .p6-return img {
+	display: block;
+	margin-left: 10px;
+	width: 1.375rem;
+	height: 1.375rem;
+}
+.page6 .p6-box .book {
+	width: 23.3125rem;
+	height: 25.1875rem;
+}
+.page6 .p6-box .book img {
+	width: 100%;
+	height: 100%;
+	animation: book-scale 2s linear 0s 6 alternate;
+}
+@keyframes book-scale{
+	from{
+		transform: scale(0.8);
+	}
+	to{
+		transform: scale(1.0);
+	}
+}
+.page6 .p6-box .home {
+	width: 8.65625rem;
+	height: 2.5rem;
+}
+.page6 .p6-box .home img {
+	width: 100%;
+	height: 100%;
+}

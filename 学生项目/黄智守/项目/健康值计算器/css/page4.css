@@ -1,0 +1,163 @@
+#wrap .page4 {
+	
+}
+.page4 .p4-box {
+	width: 23.4375rem;
+	height: 100%;
+	display: flex;
+	flex-flow: column nowrap; 
+	justify-content: space-around;
+	align-items: center;
+}
+
+.page4 .p4-box .p4-top {
+	position: relative;
+	width: 23.4375rem;
+	height: 300px;
+	z-index: 10;
+}
+/* 圆 */
+.page4 .p4-box .p4-top .p4-circle {
+	position: absolute;
+	top: 0;
+	left: calc(50% - 7.5rem);
+	width: 14.96875rem;
+	height: 15rem;
+}
+.page4 .p4-box .p4-top .p4-circle img {
+	width: 100%;
+	height: 100%;
+}
+/* 农民伯伯 */
+.page4 .p4-box .p4-top .p4-rmbb {
+	position: absolute;
+	top: 0rem ;
+	left: calc(50% - 10rem);
+	width: 19.875rem;
+	height: 17.09375rem;
+	z-index: 100;
+	transform: translateY(-18.09375rem);
+	animation: rmbb 2s linear 4s forwards;
+}
+.page4 .p4-box .p4-top .p4-rmbb img {
+	width: 100%;
+	height: 100%;
+}
+@keyframes rmbb{
+	from{
+		transform: translateY(-18.09375rem);
+	}
+	to{
+		transform: translateY(0rem);
+	}
+}
+/* 玉米 */
+.page4 .p4-box .p4-top .p4-ym {
+	position: absolute;
+	top: 12.5rem;
+	left: 1.5625rem;
+	width: 9rem;
+	height: 5.75rem;
+	transform: translateX(-10.5625rem);
+	animation: ym 2s linear forwards;
+}
+.page4 .p4-box .p4-top .p4-ym img {
+	width: 100%;
+	height: 100%;
+}
+@keyframes ym{
+	from{
+		transform: translateX(-10.5625rem);
+	}
+	to{
+		transform: translateX(0);
+	}
+}
+/* 五谷 */
+.page4 .p4-box .p4-top .p4-wg {
+	position: absolute;
+	top: 12.5rem;
+	right: 1.875rem;
+	width: 16.4375rem;
+	height: 6.625rem;
+	transform: translateX(18.3125rem);
+	animation: wg 2s linear 2s forwards;
+}
+.page4 .p4-box .p4-top .p4-wg img {
+	width: 100%;
+	height: 100%;
+}
+@keyframes wg{
+	from{
+		transform: translateX(18.3125rem);
+	}
+	to{
+		transform: translateX(0);
+	}
+}
+.page4 .p4-box .p4-text {
+	width: 16.78125rem;
+	height: 8.4375rem;
+	z-index: 10;
+}
+.page4 .p4-box .p4-text img {
+	width: 16.78125rem;
+	height: 8.4375rem;
+}
+
+.page4 .p4-box .p4-info {
+	width: 19.1875rem;
+	height: 8.125rem;
+}
+.page4 .p4-box .p4-info form {
+	width: 19.1875rem;
+	height: 8.125rem;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+.page4 .p4-box .p4-info form .name {
+	position: relative;
+	width: 9.125rem;
+	height: 2.5rem;
+	background: url(../img/p4-input.png) no-repeat top left;
+	background-size: 100% 100%;
+}
+.page4 .p4-box .p4-info form .name input {
+	position: absolute;
+	top: 4px;
+	left: 10px;
+	width: 120px;
+	height: 25px;
+	outline: none;
+	border: none;
+	color: gray;
+}
+
+.page4 .p4-box .p4-info form .job {
+	position: relative;
+	width: 146px;
+	height: 40px;
+	background: url(../img/p4-input.png) no-repeat top left;
+	background-size: 100% 100%;
+}
+.page4 .p4-box .p4-info form .job select {
+	position: absolute;
+	top: 4px;
+	left: 10px;
+	width: 120px;
+	height: 25px;
+	outline: none;
+	border: none;
+	color: gray;
+}
+.page4 .p4-box .p4-info form .sub-btn {
+	width: 307px;
+	height: 53px;
+}
+
+.page4 .p4-box .p4-info form .sub-btn img {
+	width: 100%;
+	height: 100%;
+}

@@ -1,0 +1,112 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html,body {
+	height: 100%;
+}
+
+#wrap {
+	position: relative;
+	width: 23.4375rem;
+	height: 100%;
+	overflow: hidden;
+}
+
+#wrap .page {
+	position: absolute;
+	width: 23.4375rem;
+	height: 100%;
+	overflow: hidden;
+	display: none;
+}
+
+#wrap .page:nth-child(1) {
+	display: block;
+	background-color: teal;
+}
+#wrap .page:nth-child(2) {
+	background-color: tomato;
+}
+#wrap .page:nth-child(3) {
+	background-color: pink;
+}
+#wrap .page:nth-child(4) {
+	background-color: purple;
+}
+#wrap .page:nth-child(5) {
+	background-color: yellow;
+}
+
+.in-top{
+	animation: in-top 1.5s linear both;
+}
+.out-top{
+	animation: out-top 1.5s linear both;
+}
+.in-down{
+	animation: in-down 1.5s linear both;
+}
+.out-down{
+	animation: out-down 1.5s linear both;
+}
+
+@keyframes in-top{
+	from{
+		transform: translateY(0%);
+	}
+	to{
+		transform: translateY(-100%);
+	}
+}
+
+@keyframes out-top{
+	from{
+		transform: translateY(100%);
+	}
+	to{
+		transform: translateY(0%);
+	}
+}
+
+@keyframes in-down{
+	from{
+		transform: translateY(0%);
+	}
+	to{
+		transform: translateY(100%);
+	}
+}
+
+@keyframes out-down{
+	from{
+		transform: translateY(-100%);
+	}
+	to{
+		transform: translateY(0%);
+	}
+}
+
+.music-logo {
+	width: 1.875rem;
+	height: 1.875rem;
+	position: fixed;
+	top: 0.625rem;
+	right: 0.625rem;
+}
+
+.music-logo img {
+	width: 100%;
+	height: 100%;
+	animation: music-rotate 2s linear infinite alternate;
+}
+
+@keyframes music-rotate{
+	from{
+		transform: rotate(-30deg);
+	}
+	to{
+		transform: rotate(30deg);
+	}
+}

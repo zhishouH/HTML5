@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<!-- 引入页面尺寸适配脚本 -->
+	<script src="./js/resize.js" type="text/javascript" charset="utf-8"></script>
+	<!-- 引入页面主体样式文件 -->
+	<link rel="stylesheet" type="text/css" href="./css/index.css"/>
+	<!-- 引入page1加载页样式文件 -->
+	<link rel="stylesheet" type="text/css" href="./css/page1.css"/>
+	<!-- 引入page2页样式文件 -->
+	<link rel="stylesheet" type="text/css" href="./css/page2.css"/>
+	<!-- 引入page3页样式文件 -->
+	<link rel="stylesheet" type="text/css" href="./css/page3.css"/>
+	<!-- 引入page4页样式文件 -->
+	<link rel="stylesheet" type="text/css" href="./css/page4.css"/>
+	<!-- 引入page4页样式文件 -->
+	<link rel="stylesheet" type="text/css" href="./css/page5.css"/>
+	<title>健康值计算器</title>
+</head>
+<body>
+	<div id="wrap">
+		<div class="page page1">
+			<div class="p1-box">
+				<div class="p1-maisui">
+					<img src="img/p1-麦穗.png" >
+				</div>
+				<div class="p1-text1">
+					LOADING
+					<span>.</span>
+					<span>.</span>
+					<span>.</span>
+				</div>
+				<div class="p1-text2">
+					0%
+				</div>
+			</div>
+		</div>
+		<div class="page page2">
+			<audio class="audio" src="./media/bgm.mp3" autoplay="autoplay" loop="loop">
+				当前浏览器不支持audio
+			</audio>
+			<div class="bj-logo">
+				<img class="audioBtn" src="img/bgm-on.png" >
+			</div>
+			<div class="p2-box">
+				<div class="tuolaji-bj">
+					<div class="p2-tuolaji">
+						<div class="left-lun">
+							<img src="img/p2-左轮.png" >
+						</div>
+						<div class="right-lun">
+							<img src="img/p2-右轮.png" >
+						</div>
+					</div>
+				</div>
+				<div class="p2-text">
+					<div class="p2-text-wrap">
+						<p>随着农业技术的发展</p>
+						<p>本应成为主食的五谷杂粮</p>
+						<p>却渐渐被快餐零食所替代</p>
+						<p>人们的健康水平</p>
+						<p>也在餐饮条件的变化下</p>
+						<p>变得参差不齐</p>
+					</div>
+					
+				</div>
+				<div class="p2-food"></div>
+				<div class="p2-arrow">
+					<img src="img/arrow.png" >
+				</div>
+			</div>
+		</div>
+		<div class="page page3">
+			<div class="bj-logo">
+				<img class="audioBtn" src="img/bgm-on.png" >
+			</div>
+			<div class="p3-box">
+				<div class="p3-up">
+					<div class="p3-up-text">
+						<img src="img/p3-up-text.png" >
+					</div>
+				</div>
+				<div class="p3-down">
+					<div class="p3-down-text">
+						<img src="img/p3-down-text.png" >
+					</div>
+				</div>
+			</div>
+			<div class="p3-arrow">
+				<img src="img/arrow.png" >
+			</div>
+		</div>
+		<div class="page page4">
+			<div class="bj-logo">
+				<img class="audioBtn" src="img/bgm-on.png" >
+			</div>
+			<div class="p4-box">
+				<div class="p4-top">
+					<div class="p4-circle">
+						<img src="./img/p4-bg-circle.png" >
+					</div>
+					<div class="p4-rmbb">
+						<img src="./img/p4-农民伯伯.png" >
+					</div>
+					<div class="p4-ym">
+						<img src="img/p4-玉米-地瓜.png" >
+					</div>
+					<div class="p4-wg">
+						<img src="img/p4-五谷.png" >
+					</div>
+				</div>
+				<div class="p4-text">
+					<img src="img/p4-text.png" >
+				</div>
+				<div class="p4-info">
+					<form action="page5">
+						<div class="name">
+							<input id="inpName" type="text" placeholder="输入姓名" required="required"/>
+						</div>
+						<div class="job">
+							<select id="selJob">
+								<option value="上班族">上班族</option>
+								<option value="学生">学生</option>
+							</select>
+						</div>
+						<div class="sub-btn">
+							<img id="subBtn" src="img/p4-赶快算算.png">
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="page page5">
+
+		</div>
+	</div>
+	<!-- 引入页面翻页效果脚本 -->
+	<script src="./js/touch.js" type="text/javascript" charset="utf-8"></script>
+	<!-- 引入主体脚本文件 -->
+	<script src="./js/index.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>

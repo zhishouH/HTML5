@@ -1,0 +1,168 @@
+#wrap .page2 {
+	background: url(../img/p2-bj.png) no-repeat top left;
+	background-size: 100% 100%;
+}
+
+.page2 .p2-box {
+	position: relative;
+	width: 23.4375rem;
+	height: 100%;
+	
+}
+
+/* logo */
+.page2 .p2-box .p2-logo {
+	position: absolute;
+	top: 0rem;
+	left: calc(50% - 1.5rem);
+	width: 3rem;
+	height: 3.5375rem;
+}
+.page2 .p2-box .p2-logo img {
+	width: 100%;
+	height: 100%;
+}
+
+/* 音乐 */
+.page2 .p2-box .p2-music {
+	top: 0.625rem;
+	right: 0.625rem;
+	position: absolute;
+	width: 1.5625rem;
+	height: 1.5625rem;
+}
+.page2 .p2-box .p2-music .music-btn {
+	width: 100%;
+	height: 100%;
+	/* animation: p2-music 2s linear 0s infinite; */
+}
+.rotate {
+	animation: p2-music 2s linear 0s infinite;
+}
+@keyframes p2-music{
+	from{
+		transform: rotate(0);
+	}
+	to{
+		transform: rotate(360deg);
+	}
+}
+.stop-rotate {
+	animation: stop-rotate 1s;
+}
+@keyframes stop-rotate{
+	from{	
+		transform: rotate(0);
+		}
+	to{		
+		transform: rotate(0);
+		}
+}
+/* 聊美食 */
+.page2 .p2-box .p2-talling {
+	position: absolute;
+	top: 8.75rem;
+	left: 1.875rem;
+	width: 8.25rem;
+	height: 3.25rem;
+}
+.page2 .p2-box .p2-talling img {
+	width: 100%;
+	height: 100%;
+}
+/* 黄酒 */
+.page2 .p2-box .p2-hj {
+	position: absolute;
+	top: 7.5rem;
+	right: 1.25rem;
+	width: 6.25rem;
+	height: 6.25rem;
+}
+.page2 .p2-box .p2-hj img {
+	width: 100%;
+	height: 100%;
+	transform-origin: 7.5rem 14.375rem;
+	animation: food-rotate 10s linear infinite;
+}
+/* 白糖 */
+.page2 .p2-box .p2-bt {
+	position: absolute;
+	top: 13.75rem;
+	right: 8.4375rem;
+	width: 6.25rem;
+	height: 6.25rem;
+}
+.page2 .p2-box .p2-bt img {
+	width: 100%;
+	height: 100%;
+	transform-origin: 14.375rem 7.5rem;
+	animation: food-rotate 10s linear 0.1s infinite;
+}
+/* 五花肉 */
+.page2 .p2-box .p2-whr {
+	position: absolute;
+	top: 22.1875rem;
+	right: 7.5rem;
+	width: 6.25rem;
+	height: 6.25rem;
+}
+.page2 .p2-box .p2-whr img {
+	width: 100%;
+	height: 100%;
+	transform-origin: 13.4375rem -2.1875rem;
+	animation: food-rotate 10s linear 0.2s infinite;
+}
+/* 八角 */
+.page2 .p2-box .p2-bj {
+	position: absolute;
+	top: 28.4375rem;
+	right: 1.25rem;
+	width: 6.25rem;
+	height: 6.25rem;
+}
+.page2 .p2-box .p2-bj img {
+	width: 100%;
+	height: 100%;
+	transform-origin: 6.875rem -7.5rem;
+	animation: food-rotate 10s linear 0.3s infinite;
+}
+/* 姜葱 */
+.page2 .p2-box .p2-jc {
+	position: absolute;
+	top: 21.25rem;
+	left: 3.125rem;
+	width: 6.25rem;
+	height: 6.25rem;
+}
+.page2 .p2-box .p2-jc img {
+	width: 100%;
+	height: 100%;
+	transform-origin: 18.75rem -1.25rem;
+	animation: food-rotate 10s linear infinite;
+}
+
+@keyframes food-rotate{
+	from{
+		transform: rotate(0);
+	}
+	to{
+		transform: rotate(360deg);
+	}
+}
+/* 了解做法 */
+.page2 .p2-box .p2-learn-make {
+	position: absolute;
+	bottom: 1.25rem;
+	left: calc(50% - 2.5rem);
+	width: 5rem;
+	height: 2.5rem;
+	color: #782110;
+	text-align: center;
+}
+.page2 .p2-box .p2-learn-make img{
+	display: block;
+	width: 1.59375rem;
+	height: 1rem;
+	margin: 0rem auto;
+}
+

@@ -1,0 +1,125 @@
+#wrap .page3 .p3-box {
+	position: relative;
+	width: 23.4375rem;
+	height: 100%;
+	background: url(../img/背景.png) no-repeat top left;
+	background-size: 100% 100%;
+}
+
+/* 太阳 */
+.p3-box .p3-sun {
+	position: absolute;
+	top: -4.03125rem;
+	left: -4.15625rem;
+	width: 8.0625rem;
+	height: 8.3125rem;
+}
+.p3-box .p3-sun img {
+	width: 100%;
+	height: 100%;
+	animation: p3-sun-scale 2s linear infinite alternate;
+}
+@keyframes p3-sun-scale{
+	from{
+		transform: scale(0.8);
+	}
+	to{
+		transform: scale(1);
+	}
+}
+
+.p3-box .p3-main {
+	position: absolute;
+	top: 5%;
+	left:calc(50% - 10.296875rem);
+	width: 20.59375rem;
+	height: 90%;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: space-between;
+}
+
+/* 返回 */
+.p3-box .p3-main .p3-return {
+	width: 100%;
+	height: 1.375rem;
+}
+.p3-box .p3-main .p3-return img {
+	width: 1.375rem;
+	height: 1.375rem;
+}
+
+/* 什么是亚健康 */
+.p3-box .p3-main .p3-health-what {
+	width: 100%;
+	height: 2.875rem;
+	background: url(../img/p3-圆角边框.png) no-repeat top left;
+	background-size: 100% 100%;
+	text-align: center;
+	line-height: 2.875rem;
+	color: #fff;
+}
+.p3-box .p3-main .p3-health-what span {
+	display: inline-block;
+}
+.p3-box .p3-main .p3-health-what span:nth-child(1) {
+	animation: span-move 1.2s linear 0s infinite alternate;
+}
+.p3-box .p3-main .p3-health-what span:nth-child(2) {
+	animation: span-move 1.2s linear 0.3s infinite alternate;
+}
+.p3-box .p3-main .p3-health-what span:nth-child(3) {
+	animation: span-move 1.2s linear 0.6s infinite alternate;
+}
+.p3-box .p3-main .p3-health-what span:nth-child(4) {
+	animation: span-move 1.2s linear 0.9s infinite alternate;
+}
+.p3-box .p3-main .p3-health-what span:nth-child(5) {
+	animation: span-move 1.2s linear 1.2s infinite alternate;
+}
+.p3-box .p3-main .p3-health-what span:nth-child(6) {
+	animation: span-move 1.2s linear 1.5s infinite alternate;
+}
+.p3-box .p3-main .p3-health-what span:nth-child(7) {
+	animation: span-move 1.2s linear 1.8s infinite alternate;
+}
+@keyframes span-move{
+	0% {
+		transform: translateY(0rem);
+	}
+	50% {
+		transform: translateY(4px);
+	}
+	100% {
+		transform: translateY(-6px);
+	}
+}
+
+.p3-box .p3-main .p3-health-info {
+	position: relative;
+	width: 100%;
+	height: 32.9375rem;
+	background: url(../img/p3-什么是亚健康.png) no-repeat top left;
+	background-size: 100% 100%;
+} 
+.p3-box .p3-main .p3-health-info .test-health {
+	position: absolute;
+	bottom: 4%;
+	left: calc(50% - 4.328125rem);
+	width: 8.65625rem;
+	height: 2.5rem;
+}
+.p3-box .p3-main .p3-health-info .test-health img {
+	width: 100%;
+	height: 100%;
+	animation: test-health-scale 2s linear infinite alternate;
+}
+
+@keyframes test-health-scale{
+	from{
+		transform: scale(0.8);
+	}
+	to{
+		transform: scale(1);
+	}
+}

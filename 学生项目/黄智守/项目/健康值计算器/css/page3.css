@@ -1,0 +1,118 @@
+.page3 {
+	
+}
+
+.page3 .p3-box {
+	position: relative;
+/* 	width: 23.4375rem;
+	height: 100%; */
+}
+
+.page3 .p3-box .p3-up {
+	width: 23.5625rem;
+	height: 26.5625rem;
+	overflow: hidden;
+	background: url(../img/p3-up.png) no-repeat top left;
+	background-size: 100% 100%;
+	transform: translateX(23.5625rem);
+	animation: p3-up-right 2s linear forwards;
+}
+.page3 .p3-box .p3-up .p3-up-text {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+.page3 .p3-box .p3-up .p3-up-text img {
+	position: absolute;
+	top: 3.75rem;
+	left: 2.1875rem;
+	width: 11.03125rem;
+	height: 6.78125rem;
+	opacity: 0;
+	animation: p3-up-text 2s linear 2s forwards;
+}
+@keyframes p3-up-right{
+	from{
+		transform: translateX(23.5625rem);
+	}
+	to{
+		transform: translateX(0);
+	}
+}
+@keyframes p3-up-text{
+	from{
+		opacity: 0;
+	}
+	to{
+		opacity: 1;
+	}
+}
+.page3 .p3-box .p3-down {
+	position: absolute;
+	top: 18.5rem;
+	width: 23.5625rem;
+	height: 24.0625rem;
+	overflow: hidden;
+	background: url(../img/p3-down.png) no-repeat top left;
+	background-size: 100% 100%;
+	transform: translateX(-23.5625rem);
+	animation: p3-down-left 2s linear 2s forwards;
+}
+.page3 .p3-box .p3-down .p3-down-text {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+.page3 .p3-box .p3-down .p3-down-text img {
+	position: absolute;
+	top: 8.75rem;
+	right: 1.875rem;
+	width: 11.03125rem;
+	height: 6.78125rem;
+	opacity: 0;
+	animation: p3-down-text 2s linear 4s forwards;
+}
+@keyframes  p3-down-left{
+	from{
+			transform: translateX(-23.5625rem);
+	}
+	to{
+			transform: translateX(0);
+	}
+}
+
+@keyframes p3-down-text{
+	from{
+		opacity: 0;
+	}
+	to{
+		opacity: 1;
+	}
+}
+
+/* 下滑箭头 */
+.page3 .p3-arrow {
+	position: fixed;
+	bottom: 0.625rem;
+	left: calc(50% - 0.796875rem);
+	width: 1.59375rem;
+	height: 1.5625rem;
+	z-index: 99;
+}
+
+.page3 .p3-arrow img {
+	width: 100%;
+	height: 100%;
+	animation: p3-arrow 2s linear infinite alternate;
+}
+@keyframes p3-arrow{
+	0%{
+		transform: translateY(0);
+	}
+	50%{
+		transform: translateY(-0.5rem);
+	}
+	100% {
+		transform: translateY(0.25rem);
+	}
+}

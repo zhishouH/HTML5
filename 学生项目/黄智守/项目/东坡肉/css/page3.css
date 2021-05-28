@@ -1,0 +1,113 @@
+#wrap .page3 {
+	background: url(../img/p3-1-bj.png) no-repeat top left;
+	background-size: 100% 100%;
+}
+
+.page3 .p3-box {
+	position: relative;
+	width: 23.4375rem;
+	height: 100%;
+}
+/* logo */
+.page3 .p3-box .p3-logo {
+	position: absolute;
+	top: 0rem;
+	left: calc(50% - 1.5rem);
+	width: 3rem;
+	height: 3.5375rem;
+}
+.page3 .p3-box .p3-logo img {
+	width: 100%;
+	height: 100%;
+}
+/* 音乐 */
+.page3 .p3-box .p3-music {
+	position: absolute;
+	top: 0.625rem;
+	right: 0.625rem;
+	width: 1.5625rem;
+	height: 1.5625rem;
+}
+.page3 .p3-box .p3-music .music-btn {
+	width: 100%;
+	height: 100%;
+}
+.rotate {
+	animation: p3-music 2s linear 0s infinite;
+}
+@keyframes p3-music{
+	from{
+		transform: rotate(0);
+	}
+	to{
+		transform: rotate(360deg);
+	}
+}
+.stop-rotate {
+	animation: stop-rotate 1s;
+}
+@keyframes stop-rotate{
+	from{	
+		transform: rotate(0);
+		}
+	to{		
+		transform: rotate(0);
+		}
+}
+
+.page3 .p3-box .p3-text {
+	position: absolute;
+	top: 30%;
+	left: 8%;
+	width: 18.625rem;
+	height: 11.46875rem;
+}
+
+.page3 .p3-box .p3-text img {
+	width: 100%;
+	height: 100%;
+}
+
+.page3 .p3-box .p3-tab {
+	position: absolute;
+	bottom: 15%;
+	left: calc(50% - 9.375rem);
+	width: 18.75rem;
+	height: 5.625rem;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+}
+
+.page3 .p3-box .p3-tab .tabs {
+	width: 5.625rem;
+	height: 5.625rem;
+	border: 1px solid #c6d291;
+}
+.tabs-choose {
+	box-shadow: 0 0 2px 1px #c6d291;
+}
+.page3 .p3-box .p3-tab .tabs:nth-child(1) {
+	background: url(../img/p3-1-whr.png) no-repeat top left;
+	background-size: 100% 100%;
+}
+.page3 .p3-box .p3-tab .tabs:nth-child(2) {
+	background: url(../img/p3-2-jc.png) no-repeat top left;
+	background-size: 100% 100%;
+}
+.page3 .p3-box .p3-tab .tabs:nth-child(3) {
+	background: url(../img/p3-3-bt.png) no-repeat top left;
+	background-size: 100% 100%;
+}
+
+.page3 .p3-box .arrow {
+	position: absolute;
+	bottom: 4%;
+	left: calc(50% - 0.8125rem);
+	width: 1.59375rem;
+	height: 1rem;
+}
+.page3 .p3-box .arrow img {
+	width: 100%;
+	height: 100%;
+}

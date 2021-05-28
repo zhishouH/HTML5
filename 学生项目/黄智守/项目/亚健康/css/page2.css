@@ -1,0 +1,130 @@
+#wrap .page2 .p2-box {
+	position: relative;
+	width: 23.4375rem;
+	height: 100%;
+	background: url(../img/背景.png) no-repeat top left;
+	background-size: 100% 100%;
+}
+
+/* 太阳 */
+.p2-box .p2-sun {
+	position: absolute;
+	top: -4.03125rem;
+	left: -4.15625rem;
+	width: 8.0625rem;
+	height: 8.3125rem;
+}
+.p2-box .p2-sun img {
+	width: 100%;
+	height: 100%;
+	animation: p2-sun-scale 2s linear infinite alternate;
+}
+@keyframes p2-sun-scale{
+	from{
+		transform: scale(0.8);
+	}
+	to{
+		transform: scale(1);
+	}
+}
+/* 音乐 */
+.p2-box .p2-music-btn {
+	position: absolute;
+	top: 0.9375rem;
+	right: 0.9375rem;
+	width: 2.21875rem;
+	height: 2.21875rem;
+}
+.p2-box .p2-music-btn img {
+	width: 100%;
+	height: 100%;
+}
+/* 足球 */
+.p2-box .ball {
+	position: absolute;
+	top:5rem;
+	left: 4.15625rem;
+	width: 3.125rem;
+	height: 3.125rem;
+}
+.p2-box .ball img {
+	width: 100%;
+	height: 100%;
+	animation: ball-run 2s linear infinite alternate ;
+}
+@keyframes ball-run{
+	from{
+		transform: translateX(-1.5625rem) rotate(0);
+	}
+	to{
+		transform: translateX(14.5rem) rotate(360deg);
+	}
+}
+/* 亚健康指数 */
+.p2-box .health {
+	position: absolute;
+	top: 8.4375rem;
+	left: 2.09375rem;
+	width: 19.1875rem;
+	height: 9.34375rem;
+}
+.p2-box .health img {
+	width: 100%;
+	height: 100%;
+}
+
+/* 蝴蝶 */
+.p2-box .butterfly {
+	position: absolute;
+	top: 18.75rem;
+	left: 2.09375rem;
+	width: 3.9375rem;
+	height: 2.6875rem;
+}
+.p2-box .butterfly img {
+	width: 100%;
+	height: 100%;
+	animation: butterfly-scale 2s linear infinite alternate;
+}
+@keyframes butterfly-scale{
+	from{
+		transform: scale(0.8);
+	}
+	to{
+		transform: scale(1);
+	}
+}
+/* 人物 */
+.p2-box .people {
+	position: absolute;
+	bottom: 0.9375rem;
+	left: 7.1875rem;
+	width: 12.09375rem;
+	height: 19.6875rem;
+}
+.p2-box .people img {
+	width: 100%;
+	height: 100%;
+}
+/* 关于亚健康按钮 */
+.p2-box .about-health {
+	position: absolute;
+	bottom: 1.875rem;
+	left: calc(50% - 4.328125rem);
+	width: 8.65625rem;
+	height: 2.5rem;
+}
+.p2-box .about-health img {
+	width: 100%;
+	height: 100%;
+	animation: about-health-scale 2s linear infinite alternate;
+}
+@keyframes about-health-scale{
+	from{
+		transform: scale(0.8);
+	}
+	to{
+		transform: scale(1);
+	}
+}
+

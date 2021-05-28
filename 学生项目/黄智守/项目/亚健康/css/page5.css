@@ -1,0 +1,202 @@
+#wrap .page5 .p5-box {
+	position: relative;
+	width: 23.4375rem;
+	height: 100%;
+	background: url(../img/背景.png) no-repeat top left;
+	background-size: 100% 100%;
+}
+
+/* 太阳 */
+.p5-box .p5-sun {
+	position: absolute;
+	top: -4.03125rem;
+	left: -4.15625rem;
+	width: 8.0625rem;
+	height: 8.3125rem;
+}
+.p5-box .p5-sun img {
+	width: 100%;
+	height: 100%;
+	animation: p5-sun-scale 2s linear infinite alternate;
+}
+@keyframes p5-sun-scale{
+	from{
+		transform: scale(0.8);
+	}
+	to{
+		transform: scale(1);
+	}
+}
+
+.p5-box .p5-main {
+	position: absolute;
+	top: 5%;
+	left:calc(50% - 10.296875rem);
+	width: 20.59375rem;
+	height: 90%;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: space-between;
+}
+
+.p5-box .p5-main .p5-return {
+	width: 100%;
+	height: 1.375rem;
+}
+.p5-box .p5-main .p5-return img {
+	width: 1.375rem;
+	height: 1.375rem;
+}
+.p5-box .p5-main .p5-test-result {
+	width: 100%;
+	height: 2.875rem;
+	background: url(../img/p3-圆角边框.png) no-repeat top left;
+	background-size: 100% 100%;
+	text-align: center;
+	line-height: 2.875rem;
+	color: #fff;
+}
+.p5-box .p5-main .p5-test-result span {
+	display: inline-block;
+}
+.p5-box .p5-main .p5-test-result span:nth-child(1) {
+	animation: span-move 1.2s linear 0s infinite alternate;
+}
+.p5-box .p5-main .p5-test-result span:nth-child(2) {
+	animation: span-move 1.2s linear 0.3s infinite alternate;
+}
+.p5-box .p5-main .p5-test-result span:nth-child(3) {
+	animation: span-move 1.2s linear 0.6s infinite alternate;
+}
+.p5-box .p5-main .p5-test-result span:nth-child(4) {
+	animation: span-move 1.2s linear 0.9s infinite alternate;
+}
+.p5-box .p5-main .p5-test-result span:nth-child(5) {
+	animation: span-move 1.2s linear 1.2s infinite alternate;
+}
+.p5-box .p5-main .p5-test-result span:nth-child(6) {
+	animation: span-move 1.2s linear 1.5s infinite alternate;
+}
+.p5-box .p5-main .p5-test-result span:nth-child(7) {
+	animation: span-move 1.2s linear 1.8s infinite alternate;
+}
+@keyframes span-move{
+	0% {
+		transform: translateY(0rem);
+	}
+	50% {
+		transform: translateY(4px);
+	}
+	100% {
+		transform: translateY(-6px);
+	}
+}
+.p5-box .p5-main .p5-health-info {
+	width: 100%;
+	height: 32.9375rem;
+	background: url(../img/p5-大圆角矩形.png) no-repeat top left;
+	background-size: 100% 100%;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: space-evenly;
+	align-items: center;
+}
+.p5-box .p5-main .p5-health-info .healeth-index {
+	width: 6.25rem;
+	height: 1.15625rem;
+}
+.p5-box .p5-main .p5-health-info .healeth-index img {
+	width: 100%;
+	height: 100%;
+}
+.p5-box .p5-main .p5-health-info .score {
+	position: relative;
+	width: 17.46875rem;
+	height: 9.34375rem;
+	background-color: pink;
+	background: url(../img/p5-版.png) no-repeat top left;
+	background-size: 100% 100%;
+}
+.p5-box .p5-main .p5-health-info .score .score-num {
+	position: absolute;
+	bottom: 32px;
+	left: calc(50% - 1.5rem);
+	width: 3.125rem;
+	height: 1.875rem;
+	font-size: 1.5rem;
+	text-align: center;
+	color: #fff;
+}
+.p5-box .p5-main .p5-health-info .score  .start {
+	position: absolute;
+	top: 50px;
+	left: calc(50% -  3.125rem);
+	width: 6.25rem;
+	height: 1.0625rem;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+}
+.p5-box .p5-main .p5-health-info .score  .start img {
+	width: 1.0625rem;
+	height: 1.09375rem;
+	transform: translateX(-3.125rem) translateY(-3.125rem);
+}
+.p5-box .p5-main .p5-health-info .score  .start img:nth-child(1) {
+	animation: start-fall 1s ease 0s forwards;
+}
+.p5-box .p5-main .p5-health-info .score  .start img:nth-child(2) {
+	animation: start-fall 1s ease 0.3s forwards;
+}
+.p5-box .p5-main .p5-health-info .score  .start img:nth-child(3) {
+	animation: start-fall 1s ease 0.6s forwards;
+}
+.p5-box .p5-main .p5-health-info .score  .start img:nth-child(4) {
+	animation: start-fall 1s ease 0.9s forwards;
+}
+.p5-box .p5-main .p5-health-info .score  .start img:nth-child(5) {
+	animation: start-fall 1s ease 1.2s forwards;
+}
+@keyframes start-fall{
+	to{
+		transform: translateX(0px) translateY(0px);
+	}
+}
+.p5-box .p5-main .p5-health-info .p5-text1 {
+	width: 90%;
+	height: 2rem;
+	font-size: 0.8125rem;
+	color: #202020;
+}
+.p5-box .p5-main .p5-health-info .symptom {
+	width: 90%;
+	height: 11.75rem;
+
+}
+.p5-box .p5-main .p5-health-info .symptom div {
+	display: inline-block;
+	margin-left: 0.5rem;
+	margin-right: 1.4rem;
+	margin-bottom: 0.5rem;
+	width: 7.09375rem;
+	height: 1.875rem;
+	text-align: center;
+	line-height: 1.875rem;
+	color: red;
+	background: url(../img/p5-圆角矩形.png) no-repeat top left;
+	background-size: 100% 100%;
+}
+.p5-box .p5-main .p5-health-info .p5-text2 {
+	width: 90%;
+	height: 2rem;
+	font-size: 0.8125rem;
+	color: #838383;
+}
+.p5-box .p5-main .p5-health-info .learn-more {
+	width: 8.65625rem;
+	height: 2.5rem;
+}
+.p5-box .p5-main .p5-health-info .learn-more img {
+	width: 100%;
+	height: 100%;
+}

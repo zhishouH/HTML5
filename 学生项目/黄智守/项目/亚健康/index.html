@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<!-- 引入页面尺寸适配脚本 -->
+	<script src="./js/resize.js" type="text/javascript" charset="utf-8"></script>
+	<!-- 引入css主体样式文件 -->
+	<link rel="stylesheet" type="text/css" href="./css/index.css"/>
+	<!-- 引入page1页样式文件 -->
+	<link rel="stylesheet" type="text/css" href="./css/page1.css"/>
+	<!-- 引入page2页样式文件 -->
+	<link rel="stylesheet" type="text/css" href="./css/page2.css"/>
+	<!-- 引入page3页样式文件 -->
+	<link rel="stylesheet" type="text/css" href="./css/page3.css"/>
+	<!-- 引入page4页样式文件 -->
+	<link rel="stylesheet" type="text/css" href="./css/page4.css"/>
+	<!--引入page5页样式文件 -->
+	<link rel="stylesheet" type="text/css" href="./css/page5.css"/>
+	<!-- 引入page6页样式文件 -->
+	<link rel="stylesheet" type="text/css" href="./css/page6.css"/>
+	<title>亚健康</title>
+</head>
+<body>
+	<div id="wrap">
+		<div class="page page1">
+			<div class="p1-box">
+				<div class="progress-bot"></div>
+				<div class="progress-top"></div>
+				<div class="progress-num">0%</div>
+			</div>
+		</div>
+		<div class="page page2">
+			<div class="p2-box">
+				<!-- 太阳 -->
+				<div class="p2-sun">
+					<img src="img/太阳.png" >
+				</div>
+				<!-- 音乐按钮 -->
+				<div class="p2-music-btn">
+					<audio id="audio" src="./media/背景音乐.mp3" autoplay="autoplay" loop="loop" >
+						当前浏览器不支持audio
+					</audio>
+					<img id="audioSwitch" src="img/音乐.png" >
+				</div>
+				<!-- 足球 -->
+				<div class="ball">
+					<img src="img/ball.png" >
+				</div>
+				<!-- 关于亚健康 -->
+				<div class="health">
+					<img src="img/p2-亚健康指数.png" >
+				</div>
+				<!-- 蝴蝶 -->
+				<div class="butterfly">
+					<img src="img/p2-蝴蝶.png" >
+				</div>
+				<!-- 人物 -->
+				<div class="people">
+					<img src="img/p2-人物.png" >
+				</div>
+				<!-- 关于亚健康按钮 -->
+				<div class="about-health">
+					<img id="aoubtHealthBtn" src="img/p2-关于亚健康.png" >
+				</div>
+			</div>
+		</div>
+		<div class="page page3">
+			<div class="p3-box">
+				<div class="p3-sun">
+					<img src="img/太阳.png" >
+				</div>
+				<div class="p3-main">
+					<div class="p3-return">
+						<img id="p3ReturnBtn" src="img/return.png" >
+					</div>
+					<div class="p3-health-what">
+						<span>什</span>
+						<span>么</span>
+						<span>是</span>
+						<span>亚</span>
+						<span>健</span>
+						<span>康</span>
+						<span>?</span>
+					</div>
+					<div class="p3-health-info">
+						<div class="test-health">
+							<img id="testHealthBtn" src="img/p3-亚健康测试.png" >
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="page page4">
+			<div class="p4-box">
+				<div class="p4-sun">
+					<img src="img/太阳.png" >
+				</div>
+				<div class="p4-main">
+					<div class="p4-return">
+						<img id="p4ReturnBtn" src="./img/return.png" >
+					</div>
+					<div class="p4-health-test">
+						<span>亚</span>
+						<span>健</span>
+						<span>康</span>
+						<span>测</span>
+						<span>试</span>
+					</div>
+					<div class="p4-health-info">
+						<div class="choose">
+							<button type="button" value="经常感冒">
+								<span>A</span>
+								经常感冒
+							</button>
+							<button type="button" value="失眠多梦">
+								<span>B</span>
+								失眠多梦
+							</button>
+							<button type="button" value="精神压力大">
+								<span>C</span>
+								精神压力大
+							</button>
+							<button type="button" value="注意力不集中">
+								<span>D</span>
+								注意力不集中
+							</button>
+							<button type="button" value="记忆力下降">
+								<span>E</span>
+								记忆力下降
+							</button>
+							<button type="button" value="焦躁不安">
+								<span>F</span>
+								焦躁不安
+							</button>
+							<button type="button" value="恐惧胆怯">
+								<span>G</span>
+								恐惧胆怯
+							</button>
+							<button type="button" value="人际关系紧张">
+								<span>H</span>
+								人际关系紧张
+							</button>
+							<button type="button" value="睡眠紊乱">
+								<span>I</span>
+								睡眠紊乱
+							</button>
+							<button type="button" value="腰酸背痛">
+								<span>J</span>
+								腰酸背痛
+							</button>
+						</div>
+						<div class="submit-test">
+							<img id="submitTestBtn" src="img/p4-提交测试.png" >
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="page page5">
+			<div class="p5-box">
+				<div class="p5-sun">
+					<img src="img/太阳.png" >
+				</div>
+				<div class="p5-main">
+					<div class="p5-return">
+						<img id="p5ReturnBtn" src="img/return.png" >
+					</div>
+					<div class="p5-test-result">
+						<span>亚</span>
+						<span>健</span>
+						<span>康</span>
+						<span>测</span>
+						<span>试</span>
+						<span>结</span>
+						<span>果</span>
+					</div>
+					<div class="p5-health-info">
+						<div class="healeth-index">
+							<img src="img/p5-亚健康指数.png" >
+						</div>
+						<div class="score">
+							<div class="start">
+							</div>
+							<div class="score-num"></div>
+						</div>
+						<div class="p5-text1">您选择的症状如下：</div>
+						<div class="symptom"></div>
+						<div class="p5-text2">如何改善亚健康状态，您可以点击按钮了解更多知识</div>
+						<div class="learn-more">
+							<img id="learnMoreBtn" src="./img/p5-了解更多.png" >		
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="page page6">
+			<div class="p6-box">
+				<div class="p6-return">
+					<img id="p6ReturnBtn" src="img/return.png" >
+				</div>
+				<div class="book">
+					<img src="./img/p6-book.png" >
+				</div>
+				<div class="home">
+					<img id="homeBtn" src="img/p6-返回首页.png" >
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<script src="./js/index.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>
